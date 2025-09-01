@@ -1,12 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
+import Home from "./components/Home.jsx";
+import Package from "./components/Pakcage.jsx"
+import Footer from "./components/Footerini.jsx";
 
 function App() {
   return (
+    <Router>
     <div className="font-sans">
-      <Navbar />
-      <Hero />
-    </div>
+        <Navbar />
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/package" element={<Package />} />
+          </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
