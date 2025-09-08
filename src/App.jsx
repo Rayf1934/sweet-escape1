@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
 import Package from "./components/Pakcage.jsx"
 import Footer from "./components/Footerini.jsx";
+import About from "./components/About.jsx";
+
+
 
 function App() {
   return (
@@ -12,6 +15,7 @@ function App() {
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/package" element={<Package />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         <Footer />
       </div>
